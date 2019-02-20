@@ -8,7 +8,7 @@ export const signUpOnSubmit = () => {
   const txtName = document.querySelector('#txt-name').value;
   const txtEmail = document.querySelector('#txt-email').value;
   const txtPassword = document.querySelector('#txt-password').value;
-  signUp(txtName, txtEmail, txtPassword)
+  signUp(txtEmail, txtPassword)
     .then(() => changeHash('/signIn'))
     .catch(() => {});
 };
