@@ -6,7 +6,7 @@ export const viewHome = {
        <h1>Welcome</h1> `;
     divElement.setAttribute('id', 'div-container');
     divElement.innerHTML = homeContent;
-
+    return divElement;
     // selecting element DOM
   }     
 };

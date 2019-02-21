@@ -1,4 +1,4 @@
-import {signIn} from '../lib/controllers/controller-firebase.js';
+import { signInOnSubmit } from '../lib/view-controller/vc-signIn-onsubmit.js';
 
 export const viewSignIn = {
   signIn: () => {
@@ -26,7 +26,7 @@ export const viewSignIn = {
       window.location.hash = '#/signUp';
     });
     const btnSignIn = formElement.querySelector('#btn-sign-in');
-    btnSignIn.addEventListener('click', signIn);
+    btnSignIn.addEventListener('click', signInOnSubmit);
     return formElement;
   }  
 };

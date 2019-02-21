@@ -1,5 +1,5 @@
 import {viewSignUp} from './ui/ui-signup.js';
-import {viewSignIn} from './ui/ui-signIn.js';
+import {viewSignIn} from './ui/ui-signin.js';
 import {viewHome} from './ui/ui-home.js';
 
 const changeTmp = (hash) => {
