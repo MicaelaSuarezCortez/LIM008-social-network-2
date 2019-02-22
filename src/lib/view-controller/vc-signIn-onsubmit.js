@@ -8,9 +8,8 @@ const changeHash = (hash) => {
 export const signInOnSubmit = () => {
   const txtEmail = document.querySelector('#txt-email').value;
   const txtPassword = document.querySelector('#txt-password').value;
-  console.log(signIn(txtEmail, txtPassword));
-  if (emailValidation && passwordValidation) {
-    signIn(txtEmail, txtPassword).then(() => {       
+  if (emailValidation(txtEmail) && passwordValidation(txtPassword)) {
+    return signIn(txtEmail, txtPassword).then(() => {       
       changeHash('/home');
     })
       .catch(() => {});

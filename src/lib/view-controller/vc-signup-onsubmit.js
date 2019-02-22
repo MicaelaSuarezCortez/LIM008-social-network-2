@@ -10,7 +10,7 @@ export const signUpOnSubmit = () => {
   const txtEmail = document.querySelector('#txt-email').value;
   const txtPassword = document.querySelector('#txt-password').value;
   console.log(txtEmail, txtPassword);
-  if (emailValidation && passwordValidation) {  
+  if (emailValidation(txtEmail) && passwordValidation(txtPassword)) {  
     signUp(txtEmail, txtPassword)      
       .then(() => changeHash('/signIn'))
       .catch(() => {});
