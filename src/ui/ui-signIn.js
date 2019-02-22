@@ -7,11 +7,11 @@ export const viewSignIn = {
       `<div>      
         <h3>Inicio Sesión</h3>
         <div>
-          <input type="text" background = "correo" id="txt-email" required></input> 
+          <input type="text" background = "correo" id="txt-email"></input> 
           <label for= "txt-email">Correo</label>   
         </div>
         <div>       
-          <input type="password" background = "contraseña" id="txt-password" required></input> 
+          <input type="password" background = "contraseña" id="txt-password"></input> 
           <label for= "txt-password">Contraseña</label>   
         </div>      
         <button type= "button" id="btn-sign-up"><img src = "" alt = "registrarme">Registrarme</button>

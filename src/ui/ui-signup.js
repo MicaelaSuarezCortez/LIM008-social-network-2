@@ -7,15 +7,15 @@ export const viewSignUp = {
       `<div>      
         <h3>Regístrate</h3>
         <div>        
-          <input type="text" placeholder="Nombre" id="txt-name" required></input>
+          <input type="text" placeholder="Nombre" id="txt-name"></input>
           <label for= "txt-name">Nombre</label>   
         </div>    
         <div>
-          <input type="text" placeholder="correo" id="txt-email" required></input> 
+          <input type="text" placeholder="correo" id="txt-email"></input> 
           <label for= "txt-email">Correo</label>   
         </div>
         <div>       
-          <input type="password" placeholder="contraseña" id="txt-password" required></input> 
+          <input type="password" placeholder="contraseña" id="txt-password"></input> 
           <label for= "txt-password">Contraseña</label>   
         </div>             
         <div>
@@ -34,7 +34,7 @@ export const viewSignUp = {
       window.location.hash = '#/signIn';
     });
     const btnSignUp = formElement.querySelector('#btn-sign-up');
-    btnSignUp.addEventListener('click', signUpOnSubmit);
+    btnSignUp.addEventListener('click', signUpOnSubmit);    
     return formElement;
   }  
 };

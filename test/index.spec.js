@@ -1,8 +1,20 @@
 // importamos la funcion que vamos a testear
-import { myFunction } from '../src/lib/index';
+import { emailValidation, passwordValidation } from '../src/lib/controllers/validation-email-password.js';
 
-describe('myFunction', () => {
+describe('emailValidation', () => {
   it('debería ser una función', () => {
-    expect(typeof myFunction).toBe('function');
+    expect(typeof emailValidation).toBe('function');
+  });
+});
+
+describe('emailValidation', () => {
+  it('debería validar si email es vacío y si tiene @ y .com', () => {
+    expect(emailValidation('mica19@hotmail.com').toEqual(true));
+  });
+});
+
+describe('passwordValidation', () => {
+  it('Debería validar si password es < 6', () => {
+    expect(passwordValidation('12345').toEqual(false));
   });
 });
