@@ -8,13 +8,19 @@ describe('emailValidation', () => {
 });
 
 describe('emailValidation', () => {
-  it('debería validar si email es vacío y si tiene @ y .com', () => {
-    expect(emailValidation('mica19@hotmail.com').toBe(true));
+  it('debería retornar true con el email mica19@hotmail.com', () => {
+    expect(emailValidation('mica19@hotmail.com')).toBe(true);
+  });
+  it('debería  retornar false con el email mica19hotmail.com', () => {
+    expect(emailValidation('mica19hotmail.com')).toBe(false);
   });
 });
 
 describe('passwordValidation', () => {
   it('Debería validar si password es < 6', () => {
-    expect(passwordValidation('12345').toBe(false));
+    expect(passwordValidation('12345')).toBe(false);
+  });
+  it('Debería validar si password es >= 6', () => {
+    expect(passwordValidation('123456')).toBe(true);
   });
 });

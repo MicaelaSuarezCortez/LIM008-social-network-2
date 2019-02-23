@@ -9,18 +9,22 @@ export const viewSignUp = {
         <div>        
           <input type="text" placeholder="Nombre" id="txt-name"></input>
           <label for= "txt-name">Nombre</label>   
+          <span id='span-name-error'></span>
         </div>    
         <div>
           <input type="text" placeholder="correo" id="txt-email"></input> 
-          <label for= "txt-email">Correo</label>   
+          <label for= "txt-email">Correo</label> 
+          <span id='span-email-error'></span>  
         </div>
         <div>       
           <input type="password" placeholder="contraseña" id="txt-password"></input> 
-          <label for= "txt-password">Contraseña</label>   
+          <label for= "txt-password">Contraseña</label>
+          <span id='span-pass-error'></span>   
         </div>             
         <div>
           <input type="password" placeholder="confirmar contraseña" id="txt-confirm-password"></input>  
-          <label for= "txt-confirm-password">Confirmar Contraseña</label>      
+          <label for= "txt-confirm-password">Confirmar Contraseña</label>  
+          <span id='span-confpass-error'></span>    
         </div>
         <button type= "button" id="btn-sign-up"><img src = "" alt = "registrarme">Registrarme</button>
         <button type= "button" id="btn-sign-in"><img src = "" alt = "iniciar sesion">Iniciar Sesión</button>        
