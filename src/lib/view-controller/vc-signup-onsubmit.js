@@ -21,22 +21,3 @@ export const signUpOnSubmit = () => {
       .catch(() => {});
   } 
 }; 
-
-/* if (emailValidation(txtEmail)) {
-    return document.getElementById('span-email-error').innerHTML = '';
-  } else {
-    return document.getElementById('span-email-error').innerHTML = 'email inválido';
-  }
-}
-if (passwordValidation(txtPassword)) {
-    return document.getElementById('span-pass-error').innerHTML = ''; 
-  } else {  
-    return document.getElementById('span-email-error').innerHTML = 'password inválido';
-  }
-
-    signUp (txtEmail, txtPassword) 
-
-      .then(() => changeHash('/signIn'))
-      .catch(() => {});
-  } 
-};*/

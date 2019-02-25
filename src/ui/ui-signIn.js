@@ -8,11 +8,13 @@ export const viewSignIn = {
         <h3>Inicio Sesión</h3>
         <div>
           <input type="text" background = "correo" id="txt-email"></input> 
-          <label for= "txt-email">Correo</label>   
+          <label for= "txt-email">Correo</label>
+          <span id='span-email-error'></span>   
         </div>
         <div>       
           <input type="password" background = "contraseña" id="txt-password"></input> 
           <label for= "txt-password">Contraseña</label>   
+          <span id='span-pass-error'></span>  
         </div>      
         <button type= "button" id="btn-sign-up"><img src = "" alt = "registrarme">Registrarme</button>
         <button type= "button" id="btn-sign-in"><img src = "" alt = "iniciar sesion">Iniciar Sesión</button>        

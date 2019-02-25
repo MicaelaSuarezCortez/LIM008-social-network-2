@@ -8,12 +8,15 @@ const changeHash = (hash) => {
 export const signInOnSubmit = () => {
   const txtEmail = document.querySelector('#txt-email').value;
   const txtPassword = document.querySelector('#txt-password').value;
-  if (emailValidation(txtEmail) && passwordValidation(txtPassword)) {
-    return signIn(txtEmail, txtPassword).then(() => {       
-      changeHash('/home');
-    })
+
+  if (!emailValidation(txtEmail)) {
+    document.getElementById('span-email-error').innerHTML = 'Email inválido';
+  }
+  if (!passwordValidation(txtPassword)) {
+    document.getElementById('span-pass-error').innerHTML = 'Password inválido'; 
+  } else {  
+    signIn(txtEmail, txtPassword)      
+      .then(() => changeHash('/home'))
       .catch(() => {});
-  } else {
-    alert('No se pudo iniciar sesión');
   } 
 };
