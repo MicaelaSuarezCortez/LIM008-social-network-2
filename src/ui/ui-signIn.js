@@ -1,4 +1,4 @@
-import {signIn} from '../lib/controllers/controller-firebase.js';
+import { signInOnSubmit } from '../lib/view-controller/vc-signIn-onsubmit.js';
 
 export const viewSignIn = {
   signIn: () => {
@@ -7,12 +7,14 @@ export const viewSignIn = {
       `<div>      
         <h3>Inicio Sesión</h3>
         <div>
-          <input type="text" background = "correo" id="txt-email" required></input> 
-          <label for= "txt-email">Correo</label>   
+          <input type="text" background = "correo" id="txt-email"></input> 
+          <label for= "txt-email">Correo</label>
+          <span id='span-email-error'></span>   
         </div>
         <div>       
-          <input type="password" background = "contraseña" id="txt-password" required></input> 
+          <input type="password" background = "contraseña" id="txt-password"></input> 
           <label for= "txt-password">Contraseña</label>   
+          <span id='span-pass-error'></span>  
         </div>      
         <button type= "button" id="btn-sign-up"><img src = "" alt = "registrarme">Registrarme</button>
         <button type= "button" id="btn-sign-in"><img src = "" alt = "iniciar sesion">Iniciar Sesión</button>        
@@ -26,7 +28,7 @@ export const viewSignIn = {
       window.location.hash = '#/signUp';
     });
     const btnSignIn = formElement.querySelector('#btn-sign-in');
-    btnSignIn.addEventListener('click', signIn);
+    btnSignIn.addEventListener('click', signInOnSubmit);
     return formElement;
   }  
 };

@@ -7,20 +7,24 @@ export const viewSignUp = {
       `<div>      
         <h3>Regístrate</h3>
         <div>        
-          <input type="text" placeholder="Nombre" id="txt-name" required></input>
+          <input type="text" placeholder="Nombre" id="txt-name"></input>
           <label for= "txt-name">Nombre</label>   
+          <span id='span-name-error'></span>
         </div>    
         <div>
-          <input type="text" placeholder="correo" id="txt-email" required></input> 
-          <label for= "txt-email">Correo</label>   
+          <input type="text" placeholder="correo" id="txt-email"></input> 
+          <label for= "txt-email">Correo</label> 
+          <span id='span-email-error'></span>  
         </div>
         <div>       
-          <input type="password" placeholder="contraseña" id="txt-password" required></input> 
-          <label for= "txt-password">Contraseña</label>   
+          <input type="password" placeholder="contraseña" id="txt-password"></input> 
+          <label for= "txt-password">Contraseña</label>
+          <span id='span-pass-error'></span>   
         </div>             
         <div>
           <input type="password" placeholder="confirmar contraseña" id="txt-confirm-password"></input>  
-          <label for= "txt-confirm-password">Confirmar Contraseña</label>      
+          <label for= "txt-confirm-password">Confirmar Contraseña</label>  
+          <span id='span-confpass-error'></span>    
         </div>
         <button type= "button" id="btn-sign-up"><img src = "" alt = "registrarme">Registrarme</button>
         <button type= "button" id="btn-sign-in"><img src = "" alt = "iniciar sesion">Iniciar Sesión</button>        
@@ -34,7 +38,7 @@ export const viewSignUp = {
       window.location.hash = '#/signIn';
     });
     const btnSignUp = formElement.querySelector('#btn-sign-up');
-    btnSignUp.addEventListener('click', signUpOnSubmit);
+    btnSignUp.addEventListener('click', signUpOnSubmit);    
     return formElement;
   }  
 };
