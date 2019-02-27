@@ -1,0 +1,53 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;      
+}
+
+#form-sign-in, #form-register {    
+    margin: auto;    
+    width: 50%;
+    max-width: 500px;
+    background: #8AC141;
+    padding: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.2)
+}
+
+.title-form {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 30px;
+    color: #000000
+}
+
+.input-content span{
+    font-size: 12px;      
+}
+
+.input-content input{
+    display: block;
+    border: 0px;
+    padding: 8px;
+    width: 90%;   
+    margin-bottom: 25px;   
+    font-size: 16px;
+}
+.button-form {
+    display: block;        
+    padding: 5px;
+    width: 60%;
+    margin: 30px;
+    font-size: 16px;  
+    border-radius: 5px;
+    border: 0;
+    background: #DFBE8B;
+    opacity: 1;  
+}
+
+.buttom-content{
+    margin-top: 20px;
+}
+
+
+
+

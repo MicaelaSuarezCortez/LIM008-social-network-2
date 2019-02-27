@@ -9,6 +9,7 @@ export const viewHome = {
        <figure></figure>
        <h1>Vital</h1>
        <span>Hola</span>
+       
        <nav>
         <ul>
           <li>publicaciones</li>

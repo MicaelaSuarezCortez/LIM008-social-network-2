@@ -5,8 +5,7 @@ const changeHash = (hash) => {
   location.hash = hash;
 };
 
-export const signUpOnSubmit = () => {
-  const txtName = document.querySelector('#txt-name').value;
+export const signUpOnSubmit = () => {  
   const txtEmail = document.querySelector('#txt-email').value;
   const txtPassword = document.querySelector('#txt-password').value;
  

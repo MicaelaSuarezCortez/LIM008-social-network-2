@@ -4,21 +4,17 @@ export const viewSignIn = {
   signIn: () => {
     const formElement = document.createElement('form');
     const formContent = 
-      `<div>      
-        <h3>Inicio Sesión</h3>
-        <div>
-          <input type="text" background = "correo" id="txt-email"></input> 
-          <label for= "txt-email">Correo</label>
-          <span id='span-email-error'></span>   
-        </div>
-        <div>       
-          <input type="password" background = "contraseña" id="txt-password"></input> 
-          <label for= "txt-password">Contraseña</label>   
+      ` <h3 class="title-form">Inicio Sesión</h3>
+        <div class="input-content">
+          <span id='span-email-error'></span>  
+          <input type="text" placeholder = "correo" id="txt-email"></input> 
           <span id='span-pass-error'></span>  
-        </div>      
-        <button type= "button" id="btn-sign-up"><img src = "" alt = "registrarme">Registrarme</button>
-        <button type= "button" id="btn-sign-in"><img src = "" alt = "iniciar sesion">Iniciar Sesión</button>        
-       </div>`;
+          <input type="password" placeholder = "contraseña" id="txt-password"></input> 
+        </div>  
+        <div class="buttom-content">   
+        <button type= "button" id="btn-sign-in" class="button-form">Iniciar Sesión</button>  
+        <button type= "button" id="btn-sign-up" class="button-form">Registrarme</button>               
+        </div> `;
     formElement.setAttribute('id', 'form-sign-in');
     formElement.innerHTML = formContent;
 
