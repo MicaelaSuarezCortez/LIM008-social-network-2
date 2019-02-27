@@ -1,6 +1,8 @@
 import {viewSignUp} from './ui/ui-signup.js';
 import {viewSignIn} from './ui/ui-signin.js';
 import {viewHome} from './ui/ui-home.js';
+import { getPost } from './lib/controllers/controller-firebase.js';
+import { viewItemPost } from './ui/ui-item-post.js';
 
 const changeTmp = (hash) => {
   if (hash === '#/' || hash === '' || hash === '#') {
@@ -17,8 +19,11 @@ const viewTmp = (routers) => {
   const root = document.getElementById('root');
   root.innerHTML = '';
   switch (router) {
-  case 'home':
-    root.appendChild(viewHome.home());      
+  case 'home':    
+    getPost((data) => {      
+      root.innerHTML = '';       
+      root.appendChild(viewHome.home(data));
+    });        
     break;
   case 'signIn':
     root.appendChild(viewSignIn.signIn());
