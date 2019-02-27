@@ -17,5 +17,7 @@ export const getPost = (callback) =>
       callback(data);
     }); 
 
-export const deletePost = (idPost) =>
-  firebase.firestore().collection('post').doc(idPost).delete();
+export const deletePost = (idPost) => firebase.firestore().collection('post').doc(idPost).delete();
+export const updatePost = (idPost, contentPost) => firebase.firestore().collection('post').doc(idPost).update({
+  content: contentPost
+});
