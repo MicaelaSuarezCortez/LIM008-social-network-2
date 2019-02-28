@@ -8,8 +8,7 @@ export const viewHome = {
       `<header>
        <figure></figure>
        <h1>Vital</h1>
-       <span>Hola</span>
-       
+       <span>Hola</span>       
        <nav>
         <ul>
           <li>publicaciones</li>
