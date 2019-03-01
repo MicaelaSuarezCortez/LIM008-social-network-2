@@ -48,4 +48,14 @@ describe('lista de post', () => {
         }
       ));
   });
+  it('Debería poder actualizar un post', (done) => {
+    return updatePost('abc2d', 'Laboratoria')
+      .then(() => getPost(
+        (data) => {
+          const result = data.find((post) => post.id === 'abc2d');
+          expect(result.content).toBe('Laboratoria');
+          done();
+        }
+      ));
+  });
 });
