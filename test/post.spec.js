@@ -26,7 +26,7 @@ const fixtureData = {
 // para que de manera global firebase sea reemplazado por el MockFirebase(firebase falso)
 global.firebase = new MockFirebase(fixtureData, { isNaiveSnapshotListenerEnabled: true });
 
-import {addPost, getPost, deletePost} from '../src/lib/controllers/controller-firebase.js';
+import {addPost, getPost, deletePost, updatePost} from '../src/lib/controllers/controller-firebase.js';
 
 describe('lista de post', () => {
   it('Debería porder agregar un post', (done) => {

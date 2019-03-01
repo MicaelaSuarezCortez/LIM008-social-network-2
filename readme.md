@@ -1,45 +1,64 @@
 # Creando una Red Social
+## Preámbulo
 
-## Checklist
+   Instagram, Snapchat, Twitter, Facebook, Twitch, Linkedin, etc. Las redes
+   sociales han invadido nuestras vidas. Las amamos u odiamos, y muchos no podemos
+   vivir sin ellas.
 
-### General
+   Hay redes sociales de todo tipo y para todo tipo de intereses. Por ejemplo,
+   en una ronda de financiamiento con inversionistas, se presentó una red social
+   para químicos en la que los usuarios podían publicar artículos sobre sus
+   investigaciones, comentar en los artículos de sus colegas, y filtrar artículos
+   de acuerdo a determinadas etiquetas o su popularidad, lo más reciente, o lo
+   más comentado.
 
-* [ ]  Producto final sigue los lineamientos del diseño.
+### Definición del producto  
 
-### `README.md`
+   Les presento a Vital, una red social para personas que buscan compartir y aprender sobre alimentación saludable, con Vital solo es   necesario registrarte ingresando tu correo electrónico y contraseña para que puedas iniciar sesión y de esa forma acceder a la aplicación y empieces a publicar tus recetas, consejos de cocina, ideas creativas de presentación de los platos para los más pequeños de la casa, etc. Vital esta allí para que puedas compartir la información que quieras. 
 
-* [ ]  Definición del producto
-* [ ]  Conclusiones de pruebas con el producto en HTML.
 
+
+![Sin titulo](src/images/readme/login.PNG)
+
+![Sin titulo](src/images/readme/register.PNG)
+
+![Sin titulo](src/images/readme/wall.PNG)
+
+### Conclusiones de pruebas con el producto en HTML.
+
+   El proyecto no presenta errores o advertencias pasando así la prueba de validación de: https://validator.w3.org/ 
+  
 ### Pruebas / tests
 
-* [ ]  Pruebas unitarios cubren un mínimo del 70% de statements, functions,
+* [x]  Pruebas unitarios cubren un mínimo del 70% de statements, functions,
   lines, y branches.
-* [ ]  Pasa tests (y linters) (`npm test`).
+* [x]  Pasa tests (y linters) (`npm test`).
 
-### Creación de cuenta (sign up)
+### Funcionalidades del Producto
 
-* [ ]  Permite crear cuenta.
-* [ ]  Valida email.
-* [ ]  Valida password.
-* [ ]  Muestra mensajes de error.
+#### Creación de cuenta (sign up)
 
-### Inicio de sesión (sign in)
+* [x]  Permite crear cuenta.
+* [x]  Valida email.
+* [x]  Valida password.
+* [x]  Muestra mensajes de error.
 
-* [ ]  Permite iniciar sesión.
-* [ ]  Valida email.
-* [ ]  Valida password.
-* [ ]  Muestra mensajes de error.
+#### Inicio de sesión (sign in)
 
-### Muro (wall/feed)
+* [x]  Permite iniciar sesión.
+* [x]  Valida email.
+* [x]  Valida password.
+* [x]  Muestra mensajes de error.
 
-* [ ]  Muestra _muro_, o lista de publicaciones.
-* [ ]  Permite hacer nuevas publicaciones.
-* [ ]  Permite eliminar publicaciones.
-* [ ]  Pide confirmación antes de borrar publicación.
-* [ ]  Permite editar publicación en el mismo lugar (in place).
+#### Muro (wall/feed)
 
-## Historias de usuario
+* [x]  Muestra _muro_, o lista de publicaciones.
+* [x]  Permite hacer nuevas publicaciones.
+* [x]  Permite eliminar publicaciones.
+* [x]  Pide confirmación antes de borrar publicación.
+* [x]  Permite editar publicación en el mismo lugar (in place).
+
+### Historias de usuario
 
 * Yo como usuario anonimo debo poder registrarme con mi correo.
 * Yo como usuario registrado debo poder iniciar sesión con mi correo.
