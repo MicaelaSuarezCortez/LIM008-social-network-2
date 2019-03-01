@@ -2,11 +2,10 @@ import {signUp} from '../controllers/controller-firebase.js';
 import {emailValidation, passwordValidation} from '../controllers/validation-email-password.js';
 
 const changeHash = (hash) => {
-  windows.location.hash = hash;
+  location.hash = hash;
 };
 
-export const signUpOnSubmit = () => {
-  const txtName = document.querySelector('#txt-name').value;
+export const signUpOnSubmit = () => {  
   const txtEmail = document.querySelector('#txt-email').value;
   const txtPassword = document.querySelector('#txt-password').value;
  

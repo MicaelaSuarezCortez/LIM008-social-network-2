@@ -2,43 +2,30 @@ import { signUpOnSubmit } from '../lib/view-controller/vc-signup-onsubmit.js';
 
 export const viewSignUp = {
   signUp: () => {
-    const formElement = document.createElement('form');
+    const divContentFormRegister = document.createElement('div');
     const formContent = 
-      `<div>      
-        <h3>Regístrate</h3>
-        <div>        
-          <input type="text" placeholder="Nombre" id="txt-name"></input>
-          <label for= "txt-name">Nombre</label>   
-          <span id='span-name-error'></span>
-        </div>    
-        <div>
-          <input type="text" placeholder="correo" id="txt-email"></input> 
-          <label for= "txt-email">Correo</label> 
-          <span id='span-email-error'></span>  
-        </div>
-        <div>       
-          <input type="password" placeholder="contraseña" id="txt-password"></input> 
-          <label for= "txt-password">Contraseña</label>
-          <span id='span-pass-error'></span>   
-        </div>             
-        <div>
-          <input type="password" placeholder="confirmar contraseña" id="txt-confirm-password"></input>  
-          <label for= "txt-confirm-password">Confirmar Contraseña</label>  
-          <span id='span-confpass-error'></span>    
-        </div>
-        <button type= "button" id="btn-sign-up"><img src = "" alt = "registrarme">Registrarme</button>
-        <button type= "button" id="btn-sign-in"><img src = "" alt = "iniciar sesion">Iniciar Sesión</button>        
-       </div>`;
-    formElement.setAttribute('id', 'form-register');
-    formElement.innerHTML = formContent;
+      `<form class="content-form">      
+        <h1 class="title-form">Registro</h1>
+        <p class="logo"><img src="https://user-images.githubusercontent.com/45082005/53652332-a3689d00-3c16-11e9-8f89-a331ea809d21.png" alt="vital-logo"></p>  
+          <span id='span-email-error'></span>
+          <input type="text" placeholder="correo" id="txt-email"></input>
+          <span id='span-pass-error'></span>       
+          <input type="password" placeholder="contraseña" id="txt-password"></input>        
+        <div class="content-button">            
+        <button type= "button" id="btn-sign-up">Registrarme</button>
+        <button type= "button" id="btn-sign-in">Iniciar Sesión</button>        
+       </div>
+       </form>`;
+    divContentFormRegister.setAttribute('id', 'div-content-form-signup');
+    divContentFormRegister.innerHTML = formContent;
 
     // selecting element DOM
-    const btnSignIn = formElement.querySelector('#btn-sign-in');
+    const btnSignIn = divContentFormRegister.querySelector('#btn-sign-in');
     btnSignIn.addEventListener('click', () => {
       window.location.hash = '#/signIn';
     });
-    const btnSignUp = formElement.querySelector('#btn-sign-up');
+    const btnSignUp = divContentFormRegister.querySelector('#btn-sign-up');
     btnSignUp.addEventListener('click', signUpOnSubmit);    
-    return formElement;
+    return divContentFormRegister;
   }  
 };
