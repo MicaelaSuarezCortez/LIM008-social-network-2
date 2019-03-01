@@ -6,7 +6,7 @@ export const viewSignIn = {
     const formContent = 
       ` <form class="content-form">
         <h1>Bienvenidx a Vital</h1>
-        <p class="logo"><img src="images/logo.png"></p>                
+        <p class="logo"><img src="https://user-images.githubusercontent.com/45082005/53652332-a3689d00-3c16-11e9-8f89-a331ea809d21.png" alt="vital-logo"></p>                
           <span id='span-email-error'></span>  
           <input type="text" placeholder = "correo" id="txt-email"></input>                   
           <span id='span-pass-error'></span>  
