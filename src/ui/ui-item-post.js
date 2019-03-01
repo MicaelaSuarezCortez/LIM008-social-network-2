@@ -7,7 +7,8 @@ export const viewItemPost = (post) => {
     <div class="texta-publication"><textarea rows ="8" cols ="40" id='textarea-post-${post.id}'>${post.content}</textarea></div>
     <div class="button-element">
     <button type="button" id="btn-deleted-${post.id}">Eliminar</button>   
-    <button type="button" id="btn-edit-${post.id}">Editar</button>    
+    <button type="button" id="btn-edit-${post.id}">Editar</button> 
+    <button type="button" id="btn-edit-${post.id}">Guardar</button>  
     </div>`;
   // agregando evento de click al btn eliminar una post
   liElement.querySelector(`#btn-deleted-${post.id}`).addEventListener('click', () => deleteObjPost(post));
