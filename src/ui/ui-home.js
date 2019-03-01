@@ -5,30 +5,29 @@ export const viewHome = {
   home: (post) => {
     const divElement = document.createElement('div');
     const homeContent = 
-      `<header>
-       <figure></figure>
-       <h1>Vital</h1>
-       <span>Hola</span>       
-       <nav>
-        <ul>
-          <li>publicaciones</li>
-          <li>Salir</li> 
-        </ul>
-       </nav>
-       </header>
+      ` <header>    
+          <div><img src="images/logo.png"></div>           
+          <nav>             
+            <ul>
+               <li><a href="#/home">Publicaciones</a></li>
+               <li><a href="#">Salir</a></li>  
+            </ul>          
+          </nav>              
+        </header>     
        <main>
-        <div>
-          <form>                  
-            <textarea rows ="8" cols ="40" id="txta-content-post"></textarea>
-            <span id="span-content-post-error"></span>
-            <button type="button" id="btn-add-post">Publicar</button>            
+        <div class="div-content-add-post">
+          <form> 
+            <div class="span-content-post-error"><span id="span-content-post-error"></span></div>                    
+            <div class="txta-content-post"><textarea rows ="8" cols ="40" id="txta-content-post" placeholder="¿Qué estás pensando?"></textarea></div>           
+            <div class="btn-add-post"><button type="button" id="btn-add-post">Publicar</button></div>            
           </form>
         </div>
-        <section">
+        <section>
         <ul id="post-list">
         </ul>
         </section>
         </main>`;
+    divElement.setAttribute('id', 'div-content-home');
     divElement.innerHTML = homeContent;
     const btnAddPost = divElement.querySelector('#btn-add-post');
     const ul = divElement.querySelector('#post-list');
