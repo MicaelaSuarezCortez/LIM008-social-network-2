@@ -5,11 +5,13 @@ export const viewHome = {
   home: (post) => {
     const divElement = document.createElement('div');
     const homeContent = 
-      `<header>               
-          <nav class="menu"> 
-            <div class="menu-items"><a href="#/home"><img src="images/logo-1.png" alt="logo"></a></div>
-            <div class="menu-items"><a href="#/home">Publicaciones</a></div>
-            <div class="menu-items"><a href="#">Salir</a></div>              
+      ` <header>    
+          <div><img src="images/logo.png"></div>           
+          <nav>             
+            <ul>
+               <li><a href="#/home">Publicaciones</a></li>
+               <li><a href="#">Salir</a></li>  
+            </ul>          
           </nav>              
         </header>     
        <main>
