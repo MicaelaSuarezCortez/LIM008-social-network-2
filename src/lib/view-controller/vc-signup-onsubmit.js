@@ -1,4 +1,4 @@
-import {signUp} from '../controllers/controller-firebase.js';
+import {signUp, addUser} from '../controllers/controller-firebase.js';
 import {emailValidation, passwordValidation} from '../controllers/validation-email-password.js';
 
 const changeHash = (hash) => {
@@ -15,8 +15,11 @@ export const signUpOnSubmit = () => {
   if (!passwordValidation(txtPassword)) {
     document.getElementById('span-pass-error').innerHTML = 'Password inválido'; 
   } else {  
-    signUp(txtEmail, txtPassword)      
-      .then(() => changeHash('/signIn'))
+    signUp(txtEmail, txtPassword)     
+      .then(() => {
+        addUser(txtEmail, txtPassword);        
+        changeHash('/signIn');
+      })
       .catch(() => {});
   } 
 }; 

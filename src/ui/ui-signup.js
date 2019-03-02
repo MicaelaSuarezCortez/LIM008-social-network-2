@@ -1,4 +1,5 @@
 import { signUpOnSubmit } from '../lib/view-controller/vc-signup-onsubmit.js';
+import { addUser } from '../lib/controllers/controller-firebase.js';
 
 export const viewSignUp = {
   signUp: () => {
