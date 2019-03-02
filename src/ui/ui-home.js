@@ -12,7 +12,7 @@ export const viewHome = {
                <li><a href="#/home">Publicaciones</a></li>
                <li><a href="#">Salir</a></li>  
             </ul>          
-          </nav>              
+          </nav>                        
         </header>     
        <main>
         <div class="div-content-add-post">
